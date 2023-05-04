@@ -12,6 +12,7 @@ public class MouseOverActions{
     public Actions action;
     @Test
     public void mouseOver() throws Exception{
+        action=new Actions(driver);
         WebElement ele1=driver.findElement(By.linkText("SwitchTo"));
         action.moveToElement(ele1).build().perform();
     }
